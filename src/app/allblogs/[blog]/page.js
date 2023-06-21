@@ -1,16 +1,16 @@
-'use client'
+// 'use client'
 
-import data from '@/data/data';
+// import data from '@/data/data';
 
 const Blog = ({params}) => {
-  const [blogdata]= data.filter((item)=>{
-    return item.slug==params.blog;
-  })
+  // const [blogdata]= data.filter((item)=>{
+  //   return item.slug==params.blog;
+  // })
   
   return (
     <>
-    <h1>{blogdata.title}</h1>
-   <p>{blogdata.detail}</p>
+    <h1>My blog</h1>
+   <p>my blog detail {params.blog}</p>
     </>
   )
 }
