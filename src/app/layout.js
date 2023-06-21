@@ -1,4 +1,7 @@
 // import './globals.css'
+import 'bootstrap/dist/css/bootstrap.css';
+
+import Header from "../../component/Header";
 
 export const metadata = {
   title: 'Blog App',
@@ -8,7 +11,23 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+    
+      
+      
+      
+     
+
+      <body>
+        
+        <Header/>
+        
+        {children}
+      
+      
+     
+      
+      </body>
+    
     </html>
   )
 }
